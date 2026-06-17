@@ -1,0 +1,66 @@
+============================================================
+  SOC THREAT ANALYSIS REPORT
+  Generated: 2026-06-16 13:11:01
+============================================================
+
+[ EXECUTIVE SUMMARY ]
+  Total log entries   : 5,000
+  Normal traffic      : 3,500
+  Attack events       : 1,500  (30.0% of all traffic)
+  Busiest attack hour : 13:00
+
+[ ATTACKS BY TYPE ]
+  SQL Injection          320
+  Port Scan              318
+  Malware C2             304
+  Brute Force            292
+  DDoS                   266
+
+[ SEVERITY BREAKDOWN ]
+  High           612
+  Critical       570
+  Low            318
+
+[ TOP 10 ATTACKER IPs ]
+  175.103.245.200     118 events
+  23.2.103.250        117 events
+  31.55.110.214       112 events
+  159.190.8.211       109 events
+  79.15.41.166        109 events
+  76.188.62.46        104 events
+  181.251.112.72      101 events
+  140.18.101.214      97 events
+  131.88.8.146        97 events
+  200.236.100.70      96 events
+
+[ TOP 5 TARGETED INTERNAL IPs ]
+  10.0.0.7            30 events
+  192.168.1.11        28 events
+  10.0.0.2            27 events
+  192.168.1.41        27 events
+  192.168.1.16        26 events
+
+[ DETECTION RESULTS ]
+
+  Port Scans   : 0 incidents flagged
+
+  Brute Force  : 0 incidents flagged
+
+  DDoS         : 0 incidents flagged
+
+  Malware C2   : 302 unique sessions flagged
+  Sample:
+       src_ip    dst_ip  dst_port  session_count     risk
+110.11.12.160  10.0.0.1      1234              1 Critical
+110.11.12.160  10.0.0.1      4444              1 Critical
+110.11.12.160 10.0.0.12      4444              2 Critical
+
+  Large Xfers  : 68 suspicious transfers
+
+[ RECOMMENDATIONS ]
+  4. Isolate hosts with Malware C2 connections — possible active compromise.
+  5. Investigate 68 large data transfers — possible exfiltration.
+
+============================================================
+  END OF REPORT
+============================================================
