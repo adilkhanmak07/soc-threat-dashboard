@@ -194,7 +194,3 @@ Built by **Muhammad Adil** — Software Engineering graduate with a focus on cyb
 📧 adilkhanmak07@gmail.com
 💼 [Muhammad Adil | LinkedIn](https://www.linkedin.com/in/muhammad-adil-7760593ba/)
 🐙 [GitHub](https://github.com/adilkhanmak07)
-
----
-
-> *This project uses synthetically generated data for portfolio and demonstration purposes.*
